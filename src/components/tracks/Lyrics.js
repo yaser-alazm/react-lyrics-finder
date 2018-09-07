@@ -14,7 +14,7 @@ class Lyrics extends Component {
     const { id } = this.props.match.params;
     axios
       .get(
-        `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${id}&apikey=${
+        `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${id}&apikey=${
           process.env.REACT_APP_MM_KEY
         }`
       )
@@ -25,7 +25,7 @@ class Lyrics extends Component {
         });
         axios
           .get(
-            `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.get?track_id=${id}&apikey=${
+            `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.get?track_id=${id}&apikey=${
               process.env.REACT_APP_MM_KEY
             }`
           )
